@@ -19,7 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "gu",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/css/bootstrap-theme.min.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
