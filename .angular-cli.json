@@ -20,7 +20,7 @@
       "prefix": "gu",
       "styles": [
         "styles.css",
-        "assets/css/bootstrap-theme.min.css"
+        "assets/css/bootstrap.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
