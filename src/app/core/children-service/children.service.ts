@@ -44,11 +44,15 @@ export class ChildrenService {
       times: []
     }
   ];
-  
   data = {'Sun Apr 30 2017': {
-      children: [] 
+      children: this.children
     }
   };
+  selectedDate: string;
+
+  getDateData(date:string) {
+    return this.data[date];
+  }
 
   constructor() { }
 

@@ -1,3 +1,10 @@
-<p>
-  header works!
-</p>
+<div>
+  <my-date-picker
+      (dateChanged)="selectDate($event)"
+      [options]="myDatePickerOptions"
+      required>
+  </my-date-picker>
+  <pre>
+      {{childrenService.selectedDate | json}}
+  </pre>
+</div>

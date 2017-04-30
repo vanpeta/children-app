@@ -3,17 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MyDatePickerModule } from 'mydatepicker';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MyDatePickerModule
   ],
   exports: [
     CommonModule,
     FormsModule,
-    HttpModule    
+    HttpModule,
+    MyDatePickerModule 
   ],
   declarations: []
 })
