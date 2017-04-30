@@ -9,14 +9,18 @@ import { ChildrenService } from './children-service/children.service';
 
 @NgModule({
   imports: [
-    SharedModule,
-    ChildrenService
+    SharedModule
   ],
   declarations: [
       HeaderComponent,
       ChildrenComponent,
       ChildComponent
   ],
+  exports: [
+      HeaderComponent,
+      ChildrenComponent
+  ],
   providers: [ ChildrenService ]
 })
+
 export class CoreModule { }
