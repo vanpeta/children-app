@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ChildrenService } from './../children-service/children.service';
+import { DateService } from './../date-service/date.service';
 
 import { IMyOptions } from 'mydatepicker';
 
@@ -11,18 +11,22 @@ import { IMyOptions } from 'mydatepicker';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  children;
   myDatePickerOptions: IMyOptions = {
-        // other options...
         dateFormat: 'mm/dd/yyyy',
         editableDateField: false,
         openSelectorOnInputClick: true
     };
 
 
-  constructor(private childrenService: ChildrenService) { }
+  constructor(private dateService: DateService) { }
 
   selectDate(e) {
-    this.childrenService.selectedDate = e.formatted
+    this.dateService.selectedDate = e.formatted
+  }
+
+  getChildren() {
+    this.dateService.getChildren()
   }
 
   ngOnInit() {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ChildrenService } from './../children-service/children.service';
+import { DateService } from './../date-service/date.service';
 
 @Component({
   selector: 'gu-children',
@@ -8,8 +8,8 @@ import { ChildrenService } from './../children-service/children.service';
   styleUrls: ['./children.component.css']
 })
 export class ChildrenComponent implements OnInit {
-  children;
-  constructor(private childrenService: ChildrenService) { }
+  children = this.dateService.getChildren();
+  constructor(private dateService: DateService) { }
 
   ngOnInit() {
     // this.children = this.childrenService[this.selectedDate].children

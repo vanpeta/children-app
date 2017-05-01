@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 
 //CRUD on the child
 
-
 @Injectable()
 export class ChildrenService {
   children = [
@@ -52,6 +51,10 @@ export class ChildrenService {
     }
   };
   selectedDate: string;
+
+  getChilden () {
+    return this.children.slice()
+  }
 
   getDateData(date:string) {
     return this.data[date];
