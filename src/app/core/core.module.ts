@@ -6,6 +6,7 @@ import { ChildrenComponent } from './children/children.component';
 import { ChildComponent } from './child/child.component';
 //services
 import { ChildrenService } from './children-service/children.service';
+import { DateService } from './date-service/date.service';
 
 @NgModule({
   imports: [
@@ -20,7 +21,7 @@ import { ChildrenService } from './children-service/children.service';
       HeaderComponent,
       ChildrenComponent
   ],
-  providers: [ ChildrenService ]
+  providers: [ ChildrenService, DateService ]
 })
 
 export class CoreModule { }

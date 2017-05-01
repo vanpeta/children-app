@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 
+//CRUD on the child
+
+
 @Injectable()
 export class ChildrenService {
   children = [
@@ -45,7 +48,7 @@ export class ChildrenService {
     }
   ];
   data = {'Sun Apr 30 2017': {
-      children: this.children
+      children: this.children.slice()
     }
   };
   selectedDate: string;
